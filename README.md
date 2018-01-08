@@ -54,3 +54,25 @@ Start the node:
 `multichaind chain1 -daemon`
 
 Now you have 2 nodes on your private blockchain.
+
+### Cheat Sheet
+
+Issue new assets. Ex: Issue 1000 asset1 which can be divided in groups of 100.
+
+`issue <address id> asset1 1000 0.01`
+
+Get the address id of a node:
+
+`getaddressesbyaccount ""`
+
+Transfer 100 asset1 to other address:
+
+`sendasset <target address> asset1 100`
+
+Get the balance of a wallet:
+
+`gettotalbalances`
+
+Lists a wallet's transactions:
+
+`listwallettransactions 1`
